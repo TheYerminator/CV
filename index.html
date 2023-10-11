@@ -54,11 +54,38 @@
         .formation{
             padding-bottom: 15px;
         }
+        .skills{
+            padding-bottom: 15px;
+        }
+        .skills pre{
+            margin: 10;
+        }
+        .section-title {
+    background-color: #276cb4;
+    color: #fff;
+    font-size: 30px;
+    padding: 10px;
+    border-radius: 5px;
+    margin-bottom: 10px;
+    display: inline-block;
+}
+        .hljs {
+            padding: 0.6rem 2rem;
+            background: black;
+            border: none;
+            border-radius: 5px;
+            transition: all 0.2s;
+        }
+
+        .hljs:hover {
+            border-color: #ff4754;
+        }
 
     </style>
 </head>
 
 <body>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/10.2.0/highlight.min.js"></script>
     <header>
             <a href="https://theyerminator.github.io/CV/">
                 <h1>Yoann DUMONT - CV</h1>
@@ -71,13 +98,13 @@
             <p>0782445446 | yoann.dumont@outlook.com | Belfort, 90000</p> 
     </div>
 <div class="container">
-        <h2>Profil</h2>
+        <h2 class="section-title">Profil</h2>
         <p>Élève en classe de seconde générale et technologique au lycée Raoul Follereau de Belfort, je suis à la recherche d’un stage dans le domaine du numérique et de l'informatique. </p>
         <p>Motivé, dynamique et curieux, j’aime apprendre de nouvelles choses. Un stage chez vous serait une réelle opportunité de confirmer ma vocation.</p>
     </div>
 
     <div class="container">
-        <h2>Formation</h2>
+        <h2 class="section-title">Formation</h2>
         <div class="formation">
             <h3>Classe de 2nde GT</h3>
             <p class="subtitle">Lycée Raoul Follereau</p>
@@ -93,10 +120,10 @@
         </div>
     </div>
     <div class="container">
-        <h2>Expériences</h2>
+        <h2 class="section-title">Expériences</h2>
         
         <div class="experience">
-            <h3>Diplôme Eloquensciences</h3>
+            <h3>Éloquensciences</h3>
             <p class="subtitle">Cité de l'Espace</p>
             <p class="date-location">Juin 2023 | Toulouse, France</p>
             <p class="precision">Participation à la finale du concours oratoire Eloquensciences, organisé par l'association Les Maths en Scène</p>
@@ -113,8 +140,41 @@
 
     </div>
      <div class="container">
-        <h2>Compétences</h2>
-        <p>Bienvenue sur ma page personnelle ! Je m'appelle Yoann DUMONT et ceci est mon site internet. N'hésitez pas à me contacter pour en savoir plus.</p>
+        <script>
+            hljs.initHighlightingOnLoad();
+        </script>
+
+        <h2 class="section-title">Compétences</h2>
+
+        <div class="skills">
+            <h3>Programmation C#</h3>
+            <pre>
+                <code class="csharp">
+                    Console.WriteLine("Hello World!");
+                </code>
+            </pre>
+            <p class="date-location">2023</p>
+        </div>
+
+        <div class="skills">
+            <h3>Programmation Python</h3>
+            <pre>
+                <code class="csharp">
+                    print("Hello World!")
+                </code>
+            </pre>
+            <p class="date-location">2022</p>
+        </div>
+
+        <div class="skills">
+            <h3>Programmation HTML/CSS</h3>
+            <pre>
+                <code class="csharp">
+                    Console.WriteLine("Hello World!");
+                </code>
+            </pre>
+            <p class="date-location">2022</p>
+        </div>
     </div>
 
     <footer style="text-align: center; padding: 10px;">© 2023 Yoann DUMONT</footer>
