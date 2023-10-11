@@ -80,6 +80,9 @@
         .hljs:hover {
             border-color: #ff4754;
         }
+        .code-container {
+            text-align: left;
+        }
 
     </style>
 </head>
@@ -97,6 +100,7 @@
             <h2><i>Recherche de stage</i></h2>
             <p>0782445446 | yoann.dumont@outlook.com | Belfort, 90000</p> 
     </div>
+
 <div class="container">
         <h2 class="section-title">Profil</h2>
         <p>Élève en classe de seconde générale et technologique au lycée Raoul Follereau de Belfort, je suis à la recherche d’un stage dans le domaine du numérique et de l'informatique. </p>
@@ -148,32 +152,42 @@
 
         <div class="skills">
             <h3>Programmation C#</h3>
-            <pre>
+            <p class="date-location">Apprentissage depuis 2023</p>
+            <pre class="code-container">
                 <code class="csharp">
-                    Console.WriteLine("Hello World!");
+                    Console.Write("Quel est votre nom ? : ");
+                    string username = Console.ReadLine();
+                    Console.WriteLine($"Hello {username} !");
                 </code>
             </pre>
-            <p class="date-location">2023</p>
         </div>
 
         <div class="skills">
             <h3>Programmation Python</h3>
-            <pre>
+            <p class="date-location">Apprentissage depuis 2022</p>
+            <pre class="code-container">
                 <code class="csharp">
-                    print("Hello World!")
+                    username = input("Quel est votre nom ? : ")
+                    print(f"Hello {username} !")
                 </code>
             </pre>
-            <p class="date-location">2022</p>
         </div>
 
         <div class="skills">
             <h3>Programmation HTML/CSS</h3>
-            <pre>
-                <code class="csharp">
-                    Console.WriteLine("Hello World!");
-                </code>
+            <p class="date-location">Apprentissage depuis 2022</p>
+            <pre class="code-container">
+                <code class="html">
+                    &lt;!DOCTYPE html&gt;
+                    &lt;html&gt;
+                      &lt;head&gt;
+                        &lt;title&gt;Titre&lt;/title&gt;
+                      &lt;/head&gt;
+                      &lt;body&gt;
+                        &lt;p&gt;Paragraphe&lt;/p&gt;
+                      &lt;/body&gt;
+                    &lt;/html&gt;               </code>
             </pre>
-            <p class="date-location">2022</p>
         </div>
     </div>
 
