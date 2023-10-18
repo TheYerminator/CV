@@ -19,9 +19,10 @@ header {
     background-color: #28247d;
     color: #fff;
     padding: 10px;
+    margin-bottom: 25px;
+    width: 100%;
     text-align: center;
 }
-
 footer {
     color: #fff;
     padding: 10px;
@@ -31,12 +32,10 @@ footer {
     box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.1);
     text-align: center;
 }
-
-.intro, .profile, .buttondiv {
-    width: 80%; /* Ajustez la largeur selon vos préférences */
+.intro, .profile {
+    width: 80%;
     margin-bottom: 20px;
 }
-
 .intro {
     max-width: 800px;
     padding: 20px;
@@ -46,36 +45,33 @@ footer {
     box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.1);
     text-align: center;
 }
-
 .profile {
-    padding: 20px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    padding-left: 25px;
+    padding-right: 25px;
     background-color: #1a1f28;
     color: #fff;
     border-radius: 5px;
     box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.1);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
 }
-
-.buttondiv {
-    padding: 20px;
-    background-color: #1a1f28;
-    color: #fff;
-    border-radius: 5px;
-    box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.1);
-    text-align: center;
+p {
+    line-height: 1.4;
+    font-size: 18px;
 }
-
 h1, h2, h3, h4, h5, h6 {
     color: #fff;
 }
-
 a {
     text-decoration: none;
 }
-
 .button {
     display: inline-block;
-    padding: 15px 20px;
-    font-size: 16px;
+    padding: 20px;
+    font-size: 18px;
     text-align: center;
     text-decoration: none;
     background-color: #3498db;
@@ -83,7 +79,6 @@ a {
     border-radius: 10px; 
     transition: background-color 0.3s ease;
 }
-
 .button:hover {
     background-color: #2980b9;
 }
@@ -106,15 +101,14 @@ a {
     <div class="profile">
         <p>
             Je suis actuellement élève en classe de seconde générale et technologique au lycée Raoul Follereau de Belfort et je suis passionné par le domaine du numérique et de l'informatique. Mon objectif est de m'immerger dans un environnement professionnel stimulant via un stage au sein de votre entreprise.
-        <br>
+        </p>
+        <p>
             Doté d'une nature motivée, dynamique et curieuse, j'aime repousser mes limites en apprenant constamment de nouvelles choses. Un stage chez vous représente pour moi une opportunité exceptionnelle de mettre en pratique des connaissances, de développer de nouvelles compétences et de confirmer ma vocation dans le domaine.
-        <br>
+        </p>
+        <p>
             Bien que je ne connaisse pas encore avec exactitude le métier que j'exercerai plus tard, j'aspire à découvrir les différentes facettes des métiers en lien avec l'informatique au sein de votre entreprise. Notre rencontre au salon Inouih 2023 me persuade que votre entreprise incarne l'innovation et le dynamisme propice à ce stage.
         </p>
-    </div>
-
-    <div class="buttondiv">
-        <a href="" class="button">Voir le CV Complet</a>
+        <a href="http://yoann.dumont.me/CV/cv.html" class="button">Voir le CV Complet</a>
     </div>
 
     <footer class="container">© 2023 Yoann DUMONT</footer>
