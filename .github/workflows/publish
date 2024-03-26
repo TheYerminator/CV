@@ -1,0 +1,27 @@
+name: Publish CV Site
+
+on:
+  push:
+    branches:
+      - root
+
+jobs:
+  publish:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v3
+
+      - name: Build and publish site
+        run: |
+          # Replace these commands with the ones needed to build and publish your site
+          # For example, if you're using Jekyll:
+          # bundle install
+          # bundle exec jekyll build
+          # rsync -av _site/ <username>@<your_server>:/path/to/destination
+
+          # Example with simple file copy
+          cp -r /path/to/your/site/* /path/to/your/webserver/root/CV/
+
+          echo "Site published successfully"
